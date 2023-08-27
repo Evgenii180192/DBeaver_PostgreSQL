@@ -51,10 +51,10 @@ on employee_salary.employee_id = employees.id;
 -- 7. Вывести имена и должность только Java разработчиков:
 
 select employee_name, role_name from roles_employee
- inner join employees
- on roles_employee.employee_id = employees.id
- inner join roles 
- on roles_employee.role_id = roles.id
+inner join employees
+on roles_employee.employee_id = employees.id
+inner join roles 
+on roles_employee.role_id = roles.id
 where role_name like '%Java %';
 
 -- 8. Вывести имена и должность только Python разработчиков:
