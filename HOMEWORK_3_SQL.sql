@@ -129,7 +129,7 @@ from employees
 inner join employee_salary
 on employee_salary.employee_id = employees.id
 inner join salary
-on employee_sal ary.salary_id = salary.id
+on employee_salary.salary_id = salary.id
 inner join roles_employee
 on roles_employee.employee_id = employees.id
 inner join roles
